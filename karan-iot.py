@@ -69,9 +69,9 @@ def iothub_client_telemetry_sample_run():
             #nh3=NH3 + (random.random() * 15)
             turbudity=random. randint(0,3)
             ph=random. randint(0,20)
-		chlorine=random. randint(0,8)
-		dissolved_oxygen=random. randint(0,10)
-		orp=random. randint(0,700)
+	    chlorine=random. randint(0,8)
+	    dissolved_oxygen=random. randint(0,10)
+            orp=random. randint(0,700)
             msg_txt_formatted = MSG_TXT.format(turbudity=turbudity, ph=ph, chlorine=chlorine, dissolved_oxygen=dissolved_oxygen, orp=orp)
             message = Message(msg_txt_formatted)
 
